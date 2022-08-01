@@ -6,7 +6,7 @@ import { Marker, Popup } from 'react-map-gl'
 
 const Maps = ({ searchResult }) => {
 
-  const [selectedLocation, setSelectedLocation] = useState({});
+  // const [selectedLocation, setSelectedLocation] = useState({});
 
   const coordinates = searchResult.map(item => ({
     longitude: item.long,
@@ -31,18 +31,21 @@ const Maps = ({ searchResult }) => {
       {...viewport}
     // onViewportChange={nextViewport => setViewport(nextViewport)}
     >
-      {searchResult.map(item => (
+      {/* {searchResult.map(item => (
         <div key={item.long}>
           <Marker
             longitude={item.long}
             latitude={item.lat}
             offsetLeft={-20}
             offsetRight={-10}
-          ><p role='img' onClick={() => setSelectedLocation(result)} className=' cursor-pointer text-2xl animate-bounce'>📍</p></Marker>
-
+          >
+            <p role='img' onClick={() => setSelectedLocation(item)} className=' cursor-pointer text-2xl animate-bounce'>📍</p>
+          </Marker>
+          
           {selectedLocation.long === item.long ? (<Popup onClose={() => setSelectedLocation({})} latitude={item.lat} longitude={item.long} closeOnClick={true}>{item.title}</Popup>) : (false)}
         </div>
-      ))}
+      ))
+      } */}
     </Map>
   )
 }
