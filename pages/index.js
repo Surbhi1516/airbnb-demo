@@ -77,3 +77,8 @@ export async function getStaticProps() {
   }
 
 }
+
+
+// mapbox://styles/surbhi1516/cl6b13j2t000014oevo2cju2i
+
+// pk.eyJ1Ijoic3VyYmhpMTUxNiIsImEiOiJjbDZhaXR3dW8wMHh1M2RsNzhtM3ViM2EzIn0.Uj9CHs81WVS9AFszLAOnBA
